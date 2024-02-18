@@ -1,3 +1,6 @@
-import "dotenv/config";
+import 'dotenv/config';
+import './router/socket.routes';
 
-import "./io";
+import { httpServer } from './server';
+
+httpServer.listen(3003);
