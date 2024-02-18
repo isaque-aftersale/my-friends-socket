@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "target": "ES2022",
+        "module": "ES2022",
+        "esModuleInterop": true,
+        "strict": true,
+        "moduleResolution": "Node"
+    },
+    "files": [
+        "src/index.ts"
+    ],
+    "include": [
+        "src/**/*.ts",
+        "__tests__/**/*.test.ts"
+    ],
+    "exclude": [
+        "/node_modules"
+    ]
+}
