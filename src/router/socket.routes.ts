@@ -1,9 +1,13 @@
 import { io } from '../server';
 
 io.on("connection", (socket) => {
-  console.log("Connection ok");
+  console.log("Connected -> " + socket.id);
 
-  io.on('send', (data) => {
-    console.log(data)
-  } )
+  socket.on('create chat', (data) => {
+    socket.join('')
+  })
+
+  socket.on("disconnect", (data) => {
+    console.log("Disconected -> " + data);
+  });
 });
